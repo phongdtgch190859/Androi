@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateUpdateObservationActivity">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/typeContainer"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_marginHorizontal="20dp"
+        app:helperText="     Required"
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_type"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <AutoCompleteTextView
+            android:id="@+id/typeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:focusable="false"
+
+            android:focusableInTouchMode="false"
+            android:hint="Selected type"
+            android:inputType="none"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateObContainer"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_marginHorizontal="20dp"
+        app:helperText="@string/required"
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/date"
+        app:layout_constraintTop_toBottomOf="@id/typeContainer">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateObEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:lines="1"
+            android:inputType="text"
+            android:hint="@string/date"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/commentContainer"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        app:startIconDrawable="@drawable/ic_comment"
+        app:counterEnabled="true"
+        app:counterMaxLength="200"
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateObContainer">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/commentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:gravity="top"
+            android:hint="Comment"
+            android:inputType="textMultiLine"
+            android:lines="1"
+            android:maxLength="200" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitObButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commentContainer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <color name="colorPrimary">#00796B</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="colorCustom1">#FFC107</color>
+    <color name="colorCustom2">#FF7043</color>
+    <color name="colorCustom3">#303F9F</color>
+    <color name="colorCustom4">#C2185B</color>
+    <color name="colorCustom5">#689F38</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyHike</string>
+    <string name="required">Required</string>
+    <string name="name">Name of hike</string>
+    <string name="length">Length of hike</string>
+    <string name="location">Location</string>
+    <string name="date">Selected date</string>
+    <string name="description">Description</string>
+
+
+    <string-array name="difficulty_levels">
+        <item>Easy</item>
+        <item>Intermediate</item>
+        <item>Difficult</item>
+    </string-array>
+
+</resources>
